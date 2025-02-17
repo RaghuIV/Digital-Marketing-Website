@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter,sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    color: white;
+}
+
+nav{
+    background-color: black;
+    width: 100vw;
+}
+
+.nav-bar{
+    height: 9rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+.nav-bar ul{
+display: flex;
+}
+
+.nav-items{
+    margin: 0 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-items a{
+    color: white;
+}
+
+.nav-items::after{
+    content: "";
+    height: 0.3rem;
+    width: 0%;
+    background-color: rgb(67, 67, 183);
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    border-radius: 0.2rem;
+    transition: width 0.5s;
+}
+
+.nav-items:hover::after
+{
+    width: 100%;
+    transition: width 0.5s;
+}
+
+/* End of Navigation */
+
+/* Header section */
+header{
+    padding: 3rem 0;
+    height: 90vh;
+    width: 100vw;
+    background-color: aqua;
+    background: url("images/main.png")center center/cover;
+    position: relative;
+}
+
+.hero-text{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.main-text-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Marvel", serif;
+    width: 40vw;
+    margin-top: 3rem;
+    font-size: 13rem;
+    position: absolute;
+    transform: translate(50%, -50%) scale(0);
+    top: 20%;
+}
+
+.change{
+    transform: translate(50%, -50%) scale(1);;
+    transition: transform 0.5s ease;
+}
+
+
+.hero-btn{
+background-color: white;
+width: 30rem;
+height: 5rem;
+border-radius: 1rem;
+margin: 2rem 0;
+font-size: 2rem;
+font-weight: 600;
+cursor: pointer;
+border: 3px solid darkblue;
+}
+
+.hero-btn:hover{
+    scale:1.2;
+    background-color: lightsteelblue;
+    transition: scale 0.3s;
+}
+
+.sub-hero-content{
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 14rem;
+}
+
+/* end of header */
+
+
+main{
+    width: 100vw;
+}
+
+/* Section 1 */
+#section-1
+{
+    padding:3rem 2rem;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #171637);
+    text-align: center;
+}
+
+.section-heading{
+    font-size: 6rem;
+    opacity: 0.3;
+}
+
+.services{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub-services{
+    width: 20%;
+    height: 60%;
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: rotateY(20deg) skewY(-2deg);
+    transition: transform 0.5s;
+}
+
+.sub-services:hover{
+    transform: scale(1.1);
+    box-shadow: 2rem 2rem 2rem #000;
+    transition: transform 0.5s;
+}
+
+.sub-services h3{
+    font-size: 2.5rem;
+}
+
+.sub-services p{
+    width: 80%;
+    margin: 0 auto;
+}
+/* End of Section 1 */
+
+
+
+
+
+
+
+
