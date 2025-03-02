@@ -33,3 +33,21 @@ document.addEventListener('scroll',()=>{
 closeNav.addEventListener('click',()=>{
     navMobile.classList.add('no')
 })
+
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target.currentElement);
+    const data = {};
+    formData.forEach((value, key) => { data[key] = value; });
+    fetch("https://script.google.com/macros/s/AKfycbzqit3ux8dq3hivmvPgmLEYkTXzigNGkXTO5qGQnI_CIdEzIKkJ5kYiFUYAbCt9lwfqjA/exec", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+});
