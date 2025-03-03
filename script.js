@@ -37,7 +37,7 @@ closeNav.addEventListener('click',()=>{
 
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
-    const formData = new FormData(event.target.currentElement);
+    const formData = new FormData(event.target);
     const data = {};
     formData.forEach((value, key) => { data[key] = value; });
     fetch("https://script.google.com/macros/s/AKfycbzqit3ux8dq3hivmvPgmLEYkTXzigNGkXTO5qGQnI_CIdEzIKkJ5kYiFUYAbCt9lwfqjA/exec", {
