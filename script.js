@@ -40,7 +40,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const formData = new FormData(event.target);
     const data = {};
     formData.forEach((value, key) => { data[key] = value; });
-    fetch("https://script.google.com/home/projects/1znVvik391fpZlhdc3Kqi20zBoobyOUjbUuCWfv7J-JZKFGiYGh2e_xxv", {
+    fetch("https://script.google.com/macros/s/AKfycbzqit3ux8dq3hivmvPgmLEYkTXzigNGkXTO5qGQnI_CIdEzIKkJ5kYiFUYAbCt9lwfqjA/exec", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
