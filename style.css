@@ -259,12 +259,6 @@ main{
     transition: transform 0.5s;
 }
 
-.sub-services.hover-effect{
-    transform: scale(1.1);
-    box-shadow: 2rem 2rem 2rem #000;
-    transition: transform 0.5s;
-}
-
 .sub-services h3{
     font-size: 2.5rem;
     color: #000000;
