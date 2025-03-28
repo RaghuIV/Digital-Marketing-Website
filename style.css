@@ -7,11 +7,6 @@
     text-decoration: none;
 }
 
-.logo img{
-    width: 80px;
-   background-color: #000;
-}
-
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -21,6 +16,13 @@ body{
     overflow-x: hidden;
     color: white;
 }
+
+.logo img{
+    padding-top: 3rem;
+    width: 30rem;
+    background-blend-mode: color;
+    overflow-y: hidden;
+ }
 
 nav{
     background-color: black;
@@ -133,7 +135,7 @@ display: flex;
 /* Header section */
 header{
     padding: 3rem 0;
-    height: 90vh;
+    height: 67rem;
     width: 100vw;
     background-color: aqua;
     background: url("images/main.png")center center/cover;
@@ -149,6 +151,7 @@ header{
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .main-text-content
 {
     display: flex;
@@ -210,7 +213,7 @@ main{
 #section-1
 {
     padding:3rem 2rem;
-    /* min-height: 80vh; */
+    min-height: 100vh;
     width: 100%;
     background: linear-gradient(to bottom, #000000, #171637);
     text-align: center;
@@ -219,12 +222,12 @@ main{
 .section-heading{
     font-size: 6rem;
     opacity: 0.8;
-    margin-bottom: 2rem;
+    margin: 8rem 0;
 }
 
 .services{
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 15rem;
     /* height: 90%; */
     display: flex;
     align-items: center;
@@ -273,10 +276,10 @@ main{
     background: linear-gradient(to bottom,#171637, #000000);
     padding: 3rem 3rem;
     text-align: center;
+    min-height: 100vh;
 }
 
 .upper-section-2{
-    /* height: 30%; */
     margin-bottom: 6rem;
 }
 
@@ -291,10 +294,9 @@ main{
 
 .mission{
     width: 100%;
-    /* height: 60rem; */
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .mission h3{
@@ -436,6 +438,11 @@ transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* overflow: hidden; */
+}
+
+.footer-logo a img{
+    width: 20rem;
 }
 
 .footer-services{
@@ -505,6 +512,11 @@ transition: all 0.2s ease;
 }
 
 @media (max-width:1000px){
+.logo img{
+    padding-top: 2rem;
+    width: 25rem;
+}
+
 .nav-bar{
     display: none;
 }
@@ -565,6 +577,11 @@ transition: all 0.2s ease;
 }
 
 @media (max-width:750px){
+    .logo img{
+        padding-top: 1.5rem;
+        width: 22rem;
+    }
+
     .nav-bar-mb{
         height: 7rem;
     }
@@ -605,6 +622,10 @@ transition: all 0.2s ease;
 }
 
 @media(max-width:550px){
+    .logo img{
+        padding-top: 1.5rem;
+        width: 20rem;
+    }
     .main-text-content{
         font-size: 6rem;
         margin-top:1rem;
