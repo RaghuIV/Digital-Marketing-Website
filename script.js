@@ -51,3 +51,11 @@ document.querySelector('form').addEventListener('submit', function(event) {
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
 });
+
+document.querySelector('.sub-services').addEventListener('touchstart',()=>{
+    this.classList.add('hover-effect');
+})
+
+document.querySelector('.sub-services').addEventListener('touchend',()=>{
+    this.classList.remove('hover-effect');
+})
