@@ -515,6 +515,10 @@ transition: all 0.2s ease;
 .logo img{
     padding-top: 2rem;
     width: 25rem;
+    position: absolute;
+    top: -90px;
+    left: 10px;
+    z-index: 50;
 }
 
 .nav-bar{
@@ -593,8 +597,9 @@ transition: all 0.2s ease;
 
 @media (max-width:750px){
     .logo img{
-        padding-top: 1.5rem;
+        padding-top: 2.5rem;
         width: 22rem;
+        left: 5px;
     }
 
     .nav-bar-mb{
@@ -638,8 +643,9 @@ transition: all 0.2s ease;
 
 @media(max-width:550px){
     .logo img{
-        padding-top: 1.5rem;
+        padding-top: 3rem;
         width: 20rem;
+        left:0;
     }
     .main-text-content{
         font-size: 6rem;
